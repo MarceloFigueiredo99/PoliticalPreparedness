@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="representative"
+            type="com.example.android.politicalpreparedness.representative.model.Representative" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_104dp">
+
+        <ImageView
+            android:id="@+id/representative_photo"
+            android:layout_width="@dimen/width_64dp"
+            android:layout_height="@dimen/height_64dp"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:profileImage="@{representative.official.photoUrl}"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/representative_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_84dp"
+            android:text="@{representative.office.name}"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/representative_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Vice President of the United States" />
+
+        <TextView
+            android:id="@+id/representative_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:text="@{representative.official.name}"
+            android:textColor="@color/gray50"
+            app:layout_constraintEnd_toStartOf="@+id/www_icon"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/representative_photo"
+            app:layout_constraintTop_toBottomOf="@+id/representative_position"
+            tools:text="Mike Pence" />
+
+        <TextView
+            android:id="@+id/representative_party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:layout_marginBottom="@dimen/margin_18dp"
+            android:text="@{representative.official.party}"
+            android:textColor="@color/gray50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/www_icon"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/representative_photo"
+            app:layout_constraintTop_toBottomOf="@+id/representative_name"
+            tools:text="Republican Party" />
+
+        <ImageView
+            android:id="@+id/www_icon"
+            android:layout_width="@dimen/width_40dp"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/facebook_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_www" />
+
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="@dimen/width_40dp"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/twitter_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="@dimen/width_40dp"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_twitter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="fragment_election_recyclerview_height">333dp</dimen>
+    <dimen name="fragment_election_separator_height">2dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_52dp">52dp</dimen>
+    <dimen name="margin_78dp">78dp</dimen>
+    <dimen name="margin_102dp">102dp</dimen>
+    <dimen name="margin_103dp">103dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_113dp">113dp</dimen>
+    <dimen name="margin_152dp">152dp</dimen>
+    <dimen name="margin_153dp">153dp</dimen>
+    <dimen name="margin_141dp">141dp</dimen>
+    <dimen name="margin_142dp">142dp</dimen>
+    <dimen name="margin_128dp">128dp</dimen>
+    <dimen name="margin_129dp">129dp</dimen>
+    <dimen name="margin_112dp">112dp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="height_89dp">89dp</dimen>
+    <dimen name="margin_176dp">176dp</dimen>
+    <dimen name="margin_177dp">177dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="height_104dp">104dp</dimen>
+    <dimen name="width_64dp">64dp</dimen>
+    <dimen name="height_64dp">64dp</dimen>
+    <dimen name="margin_84dp">84dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="width_40dp">40dp</dimen>
+    <dimen name="height_40dp">40dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+
+</resources>
